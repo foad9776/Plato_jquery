@@ -7,14 +7,30 @@
     <script src="jquery-3.6.0.min.js"></script>
     <title>index2</title>
     <style>
-
+        #main_box, #child_box{
+            padding: 5px;
+            background-color: aquamarine;
+            text-align: center;
+            border: 1px solid wheat;
+        }
+        #child_box{
+            padding: 50px;
+            display: none;
+        }
     </style>
 </head>
 <body>
     
 		
-	  <p>hello world</p>
+
     <div id="main_box">click me</div>
     <div id="child_box">hello from peter</div>
+    <script>
+        $(document).ready(function() {
+            $("#main_box").click(function() {
+                $("#child_box").slideToggle();
+        });
+    });
+    </script>
 </body>
 </html>
