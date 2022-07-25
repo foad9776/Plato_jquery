@@ -17,6 +17,12 @@
             padding: 50px;
             display: none;
         }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;        }
     </style>
 </head>
 <body>
@@ -25,12 +31,22 @@
 
     <div id="main_box">click me</div>
     <div id="child_box">hello from peter</div>
+
+
+
+    <div id="box"></div>
     <script>
         $(document).ready(function() {
             $("#main_box").click(function() {
                 $("#child_box").slideToggle();
+        $("#box").animate({
+            height:'toggle'
         });
+        });
+
     });
+
+    
     </script>
 </body>
 </html>
