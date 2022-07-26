@@ -39,7 +39,8 @@
         $(document).ready(function() {
             $("#main_box").click(function() {
                 $("#child_box").slideToggle();
-        $("#box").animate({
+            let box=$("#box");
+        box.animate({
             height:'toggle'
         });
         });

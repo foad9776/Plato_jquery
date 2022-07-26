@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>jQuery HTML</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+<ul>
+    <li>book</li>
+    <li>apple</li>
+    <li>milk</li>
+</ul>
+<input type="button" value="click" id="1">
+<input type="button" value="pre" id="2">
+<script>
+    $(document).ready(function() {
+        $("#1").click(function() {
+        $("ul").append("<li>peter</li>");
+        });
+    $("#2").click(function() {
+        $("ul").remove();
+    });
+    });
+</script>
+</body>
+</html>
